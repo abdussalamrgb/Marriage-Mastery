@@ -1,0 +1,380 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST3BQ3WlfWF_Bvb-c12XB0RlS-4SUGqu5MQA&s") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 5;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 40px;
+    }
+    .hero {
+        padding: 30px;
+        text-align: left;
+    }
+    .navbar {
+        padding: 15px 20px;
+    }
+}
+
+
+
+
+/* Section Wrapper */
+.relationship-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    background: #141C19;  /* Dark green/black background */
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Left Side Text */
+.text-box {
+    flex: 1 1 450px;
+}
+
+.text-box h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.text-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 550px;
+}
+
+/* Right Side Image */
+.image-box {
+    flex: 1 1 450px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .relationship-section {
+        padding: 50px 25px;
+        text-align: left;
+    }
+
+    .text-box h1 {
+        font-size: 38px;
+    }
+}
+
+
+
+
+.course-sales-section {
+    background: #0f1a1a; /* dark background similar to screenshot */
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.feature-card {
+    background: transparent;
+}
+
+.feature-card img {
+    width: 100%;
+    border-radius: 6px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.feature-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    line-height: 1.2;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card img {
+        height: 200px;
+    }
+}
+
+/*Start Master Course In Canada section*/
+/* SECTION WRAPPER */
+.marketing-section {
+    background: #ffffff;
+    padding: 60px 20px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+/* TITLE */
+.marketing-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0d1b2a; /* dark navy tone similar to screenshot */
+}
+
+/* GRID */
+.marketing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* IMAGE CARDS */
+.marketing-card img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 992px) {
+    .marketing-title {
+        font-size: 2.4rem;
+    }
+
+    .marketing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .marketing-card img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .marketing-title {
+        font-size: 1.9rem;
+    }
+
+    .marketing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .marketing-card img {
+        height: 300px;
+    }
+}
+
+/*End Master Course In Canada section*/
+
+
+
+
+
+
+
+/* SECTION WRAPPER */
+.sales-hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    min-height: 500px;
+    background: url('your-background-image.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+/* DARK OVERLAY */
+.sales-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45); /* similar to screenshot dim effect */
+}
+
+/* CONTENT */
+.sales-content {
+    position: relative;
+    max-width: 850px;
+    padding: 20px;
+    color: #fff;
+}
+
+.sales-content h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sales-content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* BUTTON */
+.btn-start {
+    display: inline-block;
+    background: #f26a21; /* orange button */
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.btn-start:hover {
+    background: #d95c19;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .sales-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .sales-content p {
+        font-size: 1.1rem;
+    }
+
+    .sales-hero {
+        height: 65vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .sales-content h1 {
+        font-size: 1.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
